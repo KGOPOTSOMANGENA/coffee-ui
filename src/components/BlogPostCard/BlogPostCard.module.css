@@ -1,0 +1,76 @@
+.card {
+  background-color:#81726a7c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px; /* Adjust width as needed */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 220px; /* Fixed height for consistency */
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-height: calc(1.6em * 4); /* 4 lines of text */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  position: relative;
+}
+
+
+.readMoreButton {
+  background-color:#d4f1f81e; /* Example button color */
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+
+.readMoreButton:hover {
+  background-color: #8b4513;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+}

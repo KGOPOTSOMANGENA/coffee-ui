@@ -1,0 +1,119 @@
+.footer {
+  background-color: #333; /* Dark background for footer */
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  border-top: 1px solid #555;  /* NEW - Single full-width line */
+  padding-top: 0.5rem;           /* NEW - Space below the line */
+}
+
+.footerSection {
+  flex: 1;
+  flex-direction: column;
+  min-width: 180px; /* Minimum width for each section */
+  text-align: left;
+}
+
+.footerSection h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color:  #fff; /* Highlight color for headings */
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footerSection ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footerSection ul li a:hover {
+  color: #fff;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialIcons img {
+  width: 24px; /* Size of social media icons */
+  height: 24px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Make SVG icons white */
+  transition: filter 0.3s ease;
+}
+
+.socialIcons img:hover {
+  filter: invert(40%) sepia(80%) saturate(1000%) hue-rotate(340deg) brightness(90%) contrast(90%); /* Example hover effect */
+}
+.bottomLinksWrapper {
+  background-color: #80655A;   /* Your desired background color */
+  display: inline-block;       /* Shrinks to fit content */
+  padding: 1rem 1rem;        /* Space inside the box */
+  border-radius:none;          /* Rounded corners */
+  margin-bottom:0; 
+  width: 100vh;            
+}
+.bottomLinks {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.bottomLinks a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.bottomLinks a:hover {
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerSection {
+    min-width: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .bottomLinks {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
