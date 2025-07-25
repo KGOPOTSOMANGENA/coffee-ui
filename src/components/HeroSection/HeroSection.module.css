@@ -1,9 +1,5 @@
-body, html {
-  margin: 0;
-  padding: 0;
-}
 .heroSection {
-  position: relative; /* ✅ REQUIRED */
+  position: relative;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -12,89 +8,46 @@ body, html {
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden; 
 }
-
-.customShapeDividerTop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg); 
-  z-index: 2;
+.coffeeText {
+  color: #EACDBD;
 }
-
-.customShapeDividerTop svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-}
-.bottomShapeDivider {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 2;
-}
-
-.bottomShapeDivider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-  transform: rotate(0deg); /* No rotation for bottom */
-}
-
-
-.shapeFill {
-   fill: #D2B5A5; 
-}
-
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Optional overlay for contrast */
+  background-color: rgba(0, 0, 0, 0.4); 
   z-index: 1;
 }
 
 .content {
   position: relative;
-  z-index: 3;
+  z-index: 10;
 }
 
 .content h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #fff; 
-  
-}
-
-.content h2 {
-  font-size: 2.5rem;
-  margin-top: 0;
   color: #fff;
+  text-align: left;
 }
 
 .content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
   color: #eee;
+  text-align: left;
 }
 
 .shopNowButton {
-  background-color: white;         
-  color: #333;                      
+  background-color: white;
+  color: #333;
   padding: 0.8rem 1.5rem;
   border: none;
-  border-radius: 25px;             
+  border-radius: 25px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
@@ -102,5 +55,36 @@ body, html {
 }
 
 .shopNowButton:hover {
-  background-color: #f0f0f0;        /* subtle gray hover */
+  background-color: #f0f0f0;
+}
+
+
+.customShapeDividerTop,
+.bottomShapeDivider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+.customShapeDividerTop {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.bottomShapeDivider {
+  bottom: 0;
+}
+
+.customShapeDividerTop svg,
+.bottomShapeDivider svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.shapeFill {
+  fill: #EACDBD;
 }

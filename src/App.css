@@ -4,9 +4,9 @@ body {
   padding: 0;
 }
 .app-container {
-  background-color: #D2B5A5; /* light coffee background */
-  max-width: 1200px;         /* laptop width */
-  margin: 0 auto;            /* center horizontally */
+  background-color: #D2B5A5; 
+  max-width: 1200px;         
+  margin: 0 auto;            
   padding: 40px 30px;
   min-height: 100vh;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -58,22 +58,22 @@ body {
 }
 .milkshake-cards-container {
   display: flex;
-  flex-wrap: wrap;          /* Allows wrapping on smaller screens */
-  justify-content: center;  /* Centers the cards */
-  gap: 2rem;                /* Space between cards */
-  padding: 2rem 1rem;       /* Optional: spacing around container */
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 2rem;                
+  padding: 2rem 1rem;       
 }
 .category-cards-container {
   display: flex;
-  flex-wrap: wrap;          /* Allows wrapping on smaller screens */
-  justify-content: center;  /* Centers the cards */
-  gap: 2rem;                /* Space between cards */
-  padding: 2rem 1rem;       /* Optional: spacing around container */
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 2rem;                
+  padding: 2rem 1rem;      
 }
 .blog-posts-container{
   display: flex;
-  flex-wrap: wrap;          /* Allows wrapping on smaller screens */
-  justify-content: center;  /* Centers the cards */
-  gap: 2rem;                /* Space between cards */
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 2rem;                
   padding: 2rem 1rem; 
 }

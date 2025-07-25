@@ -8,44 +8,35 @@ const HeroSection: React.FC = () => {
       className={styles.heroSection}
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* 🔽 Wave Shape Divider at the Top */}
-  <div className={styles.customShapeDividerTop}>
-  <svg
-    data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1200 120"
-    preserveAspectRatio="none"
-  >
-    <path
-      d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-      className={styles.shapeFill}
-    />
-  </svg>
-</div>
-      {/* Overlay and Content */}
-      <div className={styles.overlay}></div>
-      <div className={styles.content}>
-        <h1>FRESHLY ROASTED</h1>
-        <h2>COFFEE</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button className={styles.shopNowButton}>Shop now</button>
+      {/* ✅ Top Shape Divider FIRST */}
+      <div className={styles.customShapeDividerTop}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.21C206.9,81.07,91.4,105.93,0,91.93V0H1200V27.35
+               c-112.41,33.53-231.85,51.35-349.49,55.19
+               -123.33,4.03-246.08-12.23-367.54-28.36
+               C415.57,44.06,368.48,47.45,321.39,56.21Z"
+            className={styles.shapeFill}
+          ></path>
+        </svg>
       </div>
 
-      {/* 👇 Bottom Wave Shape Divider */}
+      {/* ✅ Then the overlay */}
+      <div className={styles.overlay}></div>
+
+     <div className={styles.content}>
+        <h1>
+           Freshly Roasted <br />
+         <span className={styles.coffeeText}>Coffee</span>
+        </h1>
+           <p>Start your day with the best brew.</p>
+        <button className={styles.shopNowButton}>Shop Now</button>
+      </div>
+
+      {/* ✅ Bottom wave */}
       <div className={styles.bottomShapeDivider}>
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            className={styles.shapeFill}
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path d="M0,80 C480,0 960,120 1440,40 L1440,100 L0,100 Z" className={styles.shapeFill} />
         </svg>
       </div>
     </section>

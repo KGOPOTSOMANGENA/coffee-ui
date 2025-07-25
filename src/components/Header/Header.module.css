@@ -1,20 +1,22 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* or flex-start if you want top-alignment */
   padding: 1rem 2rem;
 }
 
-.logo img {
-  height: 40px; /* Adjust as needed */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6B4F4F;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0; /* reset if you previously added */
 }
 
 .nav {
-  position: absolute;
-  top: 10px;
-  right: 35px;
   background: transparent;
   z-index: 1000;
+  position: static;
 }
 
 .nav ul {
@@ -38,9 +40,6 @@
 }
 
 .searchIcon {
-  position: absolute;
-  top: 12px;
-  right: 160px; /* Adjust depending on nav width */
   font-size: 1.2rem;
   color: #333;
 }

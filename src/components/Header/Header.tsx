@@ -1,13 +1,13 @@
-//import React from 'react';
-import styles from './Header.module.css'; // Import CSS Module
-//import logo from '../../assets/images/logo.png'; // Import image
+import React from 'react';
+import styles from './Header.module.css';
 
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-     {/*<div className={styles.logo}>
-        <img src={logo} alt="Dify Solutions Logo" />
-      </div>*/}
+      {/* Text Logo */}
+      <div className={styles.logo}>
+        Monate Coffee
+      </div>
 
       <nav className={styles.nav}>
         <ul>
@@ -16,12 +16,14 @@ const Header: React.FC = () => {
           <li><a href="#">Blog</a></li>
           <li><a href="#">Media</a></li>
           <li><a href="#">Contact</a></li>
+          {/* Search icon as a link (after Contact) */}
+          <li>
+            <a href="#" className="material-icons" style={{ verticalAlign: 'middle', fontSize: '24px', color: '#333' }}>
+              search
+            </a>
+          </li>
         </ul>
       </nav>
-      <div className={styles.searchIcon}>
-        {/* You can use an icon library like React Icons or an SVG here */}
-        <i className="fas fa-search"></i> {/* Example for a font-awesome icon */}
-      </div>
     </header>
   );
 };
