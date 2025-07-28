@@ -1,3 +1,4 @@
+/*please always open this file before running the dev*/
 declare module '*.module.css' {
   const classes: { [key: string]: string };
   export default classes;

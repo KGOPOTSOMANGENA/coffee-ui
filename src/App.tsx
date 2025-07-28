@@ -1,12 +1,11 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import HeroSection from './components/HeroSection/HeroSection';
-import CategoryCard from './components/CategoryCard/CategoryCard'; // You'll create this
-import MilkshakeCard from './components/MilkshakeCard/MilkshakeCard'; // You'll create this
-import BlogPostCard from './components/BlogPostCard/BlogPostCard'; // You'll create this
-import Footer from './components/Footer/Footer'; // You'll create this
+import CategoryCard from './components/CategoryCard/CategoryCard'; 
+import MilkshakeCard from './components/MilkshakeCard/MilkshakeCard'; 
+import BlogPostCard from './components/BlogPostCard/BlogPostCard'; 
+import Footer from './components/Footer/Footer'; 
 
-// Import your category and milkshake images
 import coffeeMocha from './assets/images/coffee-mocha.jpg';
 import espressoAmericano from './assets/images/espresso-americano.jpg';
 import cappuccino from './assets/images/cappuccino.jpg';
@@ -17,7 +16,7 @@ import blog1 from './assets/images/blog-post-1.jpg';
 import blog2 from './assets/images/blog-post-2.jpg';
 import blog3 from './assets/images/blog-post-3.jpg';
 
-import './App.css'; // For general app layout/spacing, if needed
+import './App.css'; 
 
 const App: React.FC = () => {
   return (
@@ -48,7 +47,7 @@ const App: React.FC = () => {
 
       <section className="latest-blogs-section">
         <h2>LATEST BLOGS</h2>
-        <p>Explore The Recent Most Bought Shakes This Week</p> {/* This description seems off for blogs, you might want to adjust it */}
+        <p>Explore The Recent Most Bought Shakes This Week</p> 
         <div className="blog-posts-container">
           <BlogPostCard
             imageSrc={blog1}

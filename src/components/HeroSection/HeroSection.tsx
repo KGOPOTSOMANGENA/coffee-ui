@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
       className={styles.heroSection}
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      {/* ✅ Top Shape Divider FIRST */}
+      {/* top wave styling*/}
       <div className={styles.customShapeDividerTop}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
@@ -21,8 +21,8 @@ const HeroSection: React.FC = () => {
         </svg>
       </div>
 
-      {/* ✅ Then the overlay */}
-      <div className={styles.overlay}></div>
+      {/* content and button*/}
+    <div className={styles.overlay}></div>
 
      <div className={styles.content}>
         <h1>
@@ -32,8 +32,7 @@ const HeroSection: React.FC = () => {
            <p>Start your day with the best brew.</p>
         <button className={styles.shopNowButton}>Shop Now</button>
       </div>
-
-      {/* ✅ Bottom wave */}
+{/*bottom wave styling */}
       <div className={styles.bottomShapeDivider}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path d="M0,80 C480,0 960,120 1440,40 L1440,100 L0,100 Z" className={styles.shapeFill} />

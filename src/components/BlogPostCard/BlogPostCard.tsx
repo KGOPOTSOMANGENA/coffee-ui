@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './BlogPostCard.module.css';
 
-// Define the props interface for BlogPostCard
 interface BlogPostCardProps {
   imageSrc: string;
   title: string;

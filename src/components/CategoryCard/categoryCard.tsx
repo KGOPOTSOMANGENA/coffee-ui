@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './CategoryCard.module.css';
 
-// Define the props interface for CategoryCard
 interface CategoryCardProps {
   imageSrc: string;
   title: string;

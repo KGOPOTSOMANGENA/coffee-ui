@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './MilkshakeCard.module.css';
 
-// Define the props interface for MilkshakeCard
+//interface for MilkshakeCard
 interface MilkshakeCardProps {
   imageSrc: string;
   title: string;
@@ -13,6 +13,9 @@ const MilkshakeCard: React.FC<MilkshakeCardProps> = ({ imageSrc, title, price, l
   return (
     <div className={styles.card}>
       <div className={styles.likes}>
+       <span className="material-icons-sharp" style={{ fontSize: '18px', verticalAlign: 'middle', marginRight: '4px', color: '#333' }}>
+        thumb_up
+      </span>
         <span>{likes} likes</span>
       </div>
       <div className={styles.imageContainer}>
@@ -26,5 +29,4 @@ const MilkshakeCard: React.FC<MilkshakeCardProps> = ({ imageSrc, title, price, l
     </div>
   );
 };
-
 export default MilkshakeCard;

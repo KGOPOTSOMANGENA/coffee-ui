@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 
-// Import social media icons (you can replace with actual SVGs or Font Awesome)
+// social media icons
 import facebookIcon from '../../assets/images/facebook.svg';
 import youtubeIcon from '../../assets/images/youtube.svg';
 import instagramIcon from '../../assets/images/instagram.svg';

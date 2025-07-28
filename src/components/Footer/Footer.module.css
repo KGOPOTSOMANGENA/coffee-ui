@@ -1,5 +1,5 @@
 .footer {
-  background-color: #333; /* Dark background for footer */
+  background-color: #333; 
   color: #fff;
   padding: 3rem 2rem;
   text-align: center;
@@ -12,21 +12,21 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto 3rem auto;
-  border-top: 1px solid #555;  /* NEW - Single full-width line */
-  padding-top: 0.5rem;           /* NEW - Space below the line */
+  border-top: 1px solid #555;  
+  padding-top: 0.5rem;        
 }
 
 .footerSection {
   flex: 1;
   flex-direction: column;
-  min-width: 180px; /* Minimum width for each section */
+  min-width: 180px; 
   text-align: left;
 }
 
 .footerSection h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color:  #fff; /* Highlight color for headings */
+  color:  #fff; 
 }
 
 .footerSection ul {
@@ -58,20 +58,20 @@
 }
 
 .socialIcons img {
-  width: 24px; /* Size of social media icons */
+  width: 24px; 
   height: 24px;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* Make SVG icons white */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); 
   transition: filter 0.3s ease;
 }
 
 .socialIcons img:hover {
-  filter: invert(40%) sepia(80%) saturate(1000%) hue-rotate(340deg) brightness(90%) contrast(90%); /* Example hover effect */
+  filter: invert(40%) sepia(80%) saturate(1000%) hue-rotate(340deg) brightness(90%) contrast(90%);
 }
 .bottomLinksWrapper {
-  background-color: #80655A;   /* Your desired background color */
-  display: inline-block;       /* Shrinks to fit content */
-  padding: 1rem 1rem;        /* Space inside the box */
-  border-radius:none;          /* Rounded corners */
+  background-color: #80655A; 
+  display: inline-block;   
+  padding: 1rem 1rem;    
+  border-radius:none;   
   margin-bottom:0; 
   width: 100vh;            
 }
@@ -94,7 +94,7 @@
   color: #fff;
 }
 
-/* Responsive adjustments */
+/* Responsive*/
 @media (max-width: 768px) {
   .footerContent {
     flex-direction: column;

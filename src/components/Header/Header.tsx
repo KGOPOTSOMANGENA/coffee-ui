@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      {/* Text Logo */}
+       {/*logo*/}
       <div className={styles.logo}>
         Monate Coffee
       </div>
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           <li><a href="#">Blog</a></li>
           <li><a href="#">Media</a></li>
           <li><a href="#">Contact</a></li>
-          {/* Search icon as a link (after Contact) */}
+          {/* Search icon*/}
           <li>
             <a href="#" className="material-icons" style={{ verticalAlign: 'middle', fontSize: '24px', color: '#333' }}>
               search
